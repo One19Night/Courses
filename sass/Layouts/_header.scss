@@ -22,40 +22,7 @@
         }
         .navbar_form_search{
             flex-grow: 8;
-            .input-group{
-                background-color: $color-white-cream;
-                .form-control{
-                    background-color: transparent;
-                    border-color: transparent ;
-                    box-shadow: none;
-                    &:focus{
-                        background-color: $color-white-0;
-                        border-color: $color-gray-4;
-                        border-right-color: transparent;
-                    }
-                    &:focus + .input-group-append{
-                        .input-group-text{
-                            background-color: $color-white-0;
-                            border-color: $color-gray-4;
-                            border-left-color: transparent;
-                            &:hover{
-                                background-color: $color-red-0;
-                                color: $color-white-0;
-                            }
-                        }
-                    }
-                }
-                .input-group-text{
-                    background-color: transparent;
-                    border-color: transparent ;
-                    color: $color-red-0;
-                    &:hover{
-                        background-color: $color-red-0;
-                        color: $color-white-0;
-                    }
-                }
-            }
-
+            @include styleForm ($color-white-cream,$color-white-0,$color-gray-4);
         }
     }
     .navbar_right{

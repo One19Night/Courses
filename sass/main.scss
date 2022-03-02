@@ -1,6 +1,7 @@
 // Helpes
 @import './Helpers/variables';
 @import './Helpers/mixin';
+@import './Helpers/extend';
 
 
 // Base
@@ -11,6 +12,7 @@
 @import './Layouts/footer';
 // Components
 @import './Components/button';
+@import './Components/cover';
 // PAGES
 @import './Pages/home';
 // Theme
