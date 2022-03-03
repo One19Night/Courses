@@ -1,0 +1,10 @@
+.view {
+    padding: $pd-3 + 2 0;
+    .view_content {
+        width: 90%;
+        margin: auto;
+        h2 {
+            font-size: 1.25rem;
+        }
+    }
+}

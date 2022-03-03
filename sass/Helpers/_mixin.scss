@@ -15,45 +15,44 @@
     cursor: pointer;
 }
 
-@mixin hoverButton($color-hover, $bg-color-hover,$border-hover) {
-        color: $color-hover;
-        background-color: $bg-color-hover;
-        border: 1px solid $border-hover;
+@mixin hoverButton($color-hover, $bg-color-hover, $border-hover) {
+    color: $color-hover;
+    background-color: $bg-color-hover;
+    border: 1px solid $border-hover;
 }
 // FORM
-@mixin styleForm($bg-color,$bg-color-focus,$border-color) {
-    .input-group{
+@mixin styleForm($bg-color, $bg-color-focus, $border-color) {
+    .input-group {
         background-color: $bg-color;
-        .form-control{
+        .form-control {
             background-color: transparent;
-            border-color: transparent ;
+            border-color: transparent;
             box-shadow: none;
-            &:focus{
+            &:focus {
                 background-color: $bg-color-focus;
                 border-color: $border-color;
                 border-right-color: transparent;
             }
-            &:focus + .input-group-append{
-                .input-group-text{
+            &:focus + .input-group-append {
+                .input-group-text {
                     background-color: $bg-color-focus;
                     border-color: $border-color;
                     border-left-color: transparent;
-                    &:hover{
+                    &:hover {
                         background-color: $color-red-0;
                         color: $color-white-0;
                     }
                 }
             }
         }
-        .input-group-text{
+        .input-group-text {
             background-color: transparent;
-            border-color: transparent ;
+            border-color: transparent;
             color: $color-red-0;
-            &:hover{
+            &:hover {
                 background-color: $color-red-0;
                 color: $color-white-0;
             }
         }
     }
-    
 }
