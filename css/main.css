@@ -8,7 +8,7 @@
   padding: 0; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 15px;
   line-height: 1.43;
   color: #29303b;
@@ -107,7 +107,7 @@ body {
         top: 60px;
         right: 0; }
         .mynavbar .navbar_right .navbar-nav .nav-item .overlay::before {
-          content: '';
+          content: "";
           width: 15px;
           height: 15px;
           display: block;
@@ -192,6 +192,109 @@ body {
     .view .view_content h2 {
       font-size: 1.25rem; }
 
+.banner {
+  background: url("../img/udemy-logo-semi-transparent.svg") 0/30% no-repeat, linear-gradient(60deg, #6e1a52, #76d5c6 40%);
+  background-blend-mode: overlay;
+  height: 325px;
+  text-align: center;
+  display: flex;
+  align-items: center; }
+  .banner h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: normal; }
+  .banner p {
+    color: #fff;
+    margin-bottom: 0; }
+  .banner button {
+    margin: 10px 0; }
+
+.categories {
+  margin-top: 32px; }
+  .categories .categories_content {
+    width: 90%;
+    margin: auto; }
+    .categories .categories_content h2 {
+      font-size: 24px; }
+    .categories .categories_content .categories_item {
+      padding: 15px;
+      font-size: 18px;
+      border: 1px solid rgba(20, 23, 28, 0.1);
+      margin-bottom: 15px; }
+      .categories .categories_content .categories_item:hover {
+        box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1); }
+
+.feedback {
+  padding: 32px 0; }
+  .feedback .feedback_contact {
+    width: 90%;
+    margin: 0 auto; }
+    .feedback .feedback_contact h2 {
+      font-size: 24px;
+      margin-bottom: 20px; }
+
+.contact {
+  background-color: #f7f8fa; }
+  .contact .partners {
+    padding: 20px 0; }
+    .contact .partners .partners_content {
+      width: 70%;
+      margin: 0 auto; }
+      .contact .partners .partners_content .partners_text {
+        text-align: center; }
+      .contact .partners .partners_content .partners_img {
+        display: flex;
+        justify-content: space-between; }
+  .contact .jobs .jobs_content .row {
+    padding: 10px 0; }
+    .contact .jobs .jobs_content .row .jobs_item {
+      max-width: 440px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px; }
+      .contact .jobs .jobs_content .row .jobs_item h2 {
+        color: #505763;
+        font-size: 19px;
+        font-weight: 600; }
+
+footer {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal; }
+  footer .footer_top {
+    width: 90%;
+    margin: 40px auto; }
+    footer .footer_top ul {
+      height: 110px; }
+      footer .footer_top ul .nav-item {
+        flex-basis: 25%; }
+        footer .footer_top ul .nav-item .nav-link {
+          color: #007791;
+          padding: 0; }
+          footer .footer_top ul .nav-item .nav-link.bold {
+            font-weight: 700; }
+    footer .footer_top .btn-group {
+      display: block; }
+      footer .footer_top .btn-group .button-drop {
+        min-width: 160px;
+        box-shadow: none; }
+        footer .footer_top .btn-group .button-drop i {
+          padding: 0 5px; }
+        footer .footer_top .btn-group .button-drop::after {
+          margin-left: 30%; }
+      footer .footer_top .btn-group .dropdown-menu {
+        font-size: 13px; }
+  footer .footer_bottom {
+    width: 90%;
+    margin: 30px auto; }
+    footer .footer_bottom img {
+      width: 110px;
+      margin-right: 10px; }
+    footer .footer_bottom .nav-item .nav-link {
+      color: #007791;
+      font-size: 13px;
+      font-weight: normal; }
+
 .button-white {
   color: #686f7a;
   background-color: #fff;
@@ -206,9 +309,9 @@ body {
     border: 1px solid #29303b; }
 
 .button-red {
-  color: #686f7a;
+  color: #fff;
   background-color: #ec5252;
-  border: 1px solid #505763;
+  border: 1px solid #ec5252;
   font-size: 15px;
   font-weight: 600;
   padding: 11px 12px;
@@ -217,6 +320,19 @@ body {
     color: #fff;
     background-color: #521822;
     border: 1px solid #521822; }
+
+.button-drop {
+  color: #686f7a;
+  background-color: #fff;
+  border: 1px solid #505763;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 10px;
+  cursor: pointer; }
+  .button-drop:hover {
+    color: #29303b;
+    background-color: transparent;
+    border: 1px solid #29303b; }
 
 .cover {
   background-image: url("../img/cover.jpg");
@@ -299,5 +415,25 @@ body {
         color: #29303b;
         font-size: 15px;
         font-weight: 600; }
+
+.card--feedback {
+  height: 280px; }
+  .card--feedback .card-body {
+    padding: 30px; }
+    .card--feedback .card-body .card_top {
+      display: flex;
+      margin-bottom: 15px; }
+      .card--feedback .card-body .card_top .card_avartar {
+        margin-right: 15px; }
+        .card--feedback .card-body .card_top .card_avartar img {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%; }
+      .card--feedback .card-body .card_top .card_name {
+        margin-bottom: 0; }
+    .card--feedback .card-body .card-text {
+      color: #29303b;
+      font-size: 15px;
+      font-weight: normal; }
 
 /*# sourceMappingURL=main.css.map */

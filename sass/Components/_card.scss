@@ -8,29 +8,54 @@
         }
         .card-text {
             @include styleText($color-gray-0, $fs-1 - 1, $fw-0);
-        margin: $mg-0 0;
+            margin: $mg-0 0;
         }
         .card_star {
             i {
                 @include styleText($color-yellow-0, $fs-1 - 1, $fw-3);
             }
-            .card_rate{
-                @include styleText($color-gray-0,$fs-1,$fw-1);
+            .card_rate {
+                @include styleText($color-gray-0, $fs-1, $fw-1);
             }
-            .card_total{
-                @include styleText($color-gray-0,$fs-1,$fw-0);
+            .card_total {
+                @include styleText($color-gray-0, $fs-1, $fw-0);
             }
         }
-        .card_price{
+        .card_price {
             padding: $pd-2 + 2 0;
             text-align: right;
-            span:first-child{
-                @include styleText($color-gray-0,$fs-1,$fw-0);
+            span:first-child {
+                @include styleText($color-gray-0, $fs-1, $fw-0);
                 text-decoration: line-through;
             }
-            span:last-child{
-                @include styleText($color-black-0,$fs-0,$fw-1);
+            span:last-child {
+                @include styleText($color-black-0, $fs-0, $fw-1);
             }
+        }
+    }
+}
+
+.card--feedback {
+    height: 280px;
+    .card-body {
+        padding: $pd-4 - 2;
+        .card_top {
+            display: flex;
+            margin-bottom: $mg-3;
+            .card_avartar {
+                margin-right: $mg-3;
+                img {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: $border-radius-circle;
+                }
+            }
+            .card_name {
+                margin-bottom: 0;
+            }
+        }
+        .card-text {
+            @include styleText($color-black-0, $fs-0, $fw-0);
         }
     }
 }

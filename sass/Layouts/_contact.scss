@@ -1,0 +1,33 @@
+.contact {
+    background-color: $color-gray-6;
+    .partners {
+        padding: $pd-3 0;
+        .partners_content {
+            width: 70%;
+            margin: 0 auto;
+            .partners_text {
+                text-align: center;
+            }
+            .partners_img {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    .jobs {
+        .jobs_content {
+            .row {
+                padding: $pd-0 0;
+                .jobs_item {
+                    max-width: 440px;
+                    margin: 0 auto;
+                    text-align: center;
+                    padding: $pd-3;
+                    h2 {
+                        @include styleText($color-black-light, $fs-3 + 1, $fw-1);
+                    }
+                }
+            }
+        }
+    }
+}
