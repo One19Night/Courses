@@ -179,6 +179,12 @@ body {
         color: #fff;
         font-size: 15px;
         font-weight: normal; }
+  @media screen and (max-width: 1200px) {
+    .intro .intro_content .intro_icon {
+      display: none; } }
+  @media screen and (max-width: 768px) {
+    .intro {
+      display: none; } }
 
 .courses {
   margin: 25px 0; }
@@ -211,6 +217,15 @@ body {
       .courses #myTab .nav-link.active {
         border: none;
         border-bottom: 5px solid #007791; }
+  @media screen and (max-width: 1350px) {
+    .courses .courses_content .card .card-body .card-title {
+      color: #29303b;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 10px; } }
+  @media screen and (max-width: 768px) {
+    .courses .courses_content .courses_left {
+      padding: 20px; } }
 
 .view {
   padding: 22px 0; }
@@ -218,7 +233,13 @@ body {
     width: 90%;
     margin: auto; }
     .view .view_content h2 {
-      font-size: 1.25rem; }
+      font-size: 20px; }
+  @media screen and (max-width: 1350px) {
+    .view .view_content .card .card-body .card-title {
+      color: #29303b;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 10px; } }
 
 .banner {
   background: url("../img/udemy-logo-semi-transparent.svg") 0/30% no-repeat, linear-gradient(60deg, #6e1a52, #76d5c6 40%);
@@ -284,6 +305,24 @@ body {
         color: #505763;
         font-size: 19px;
         font-weight: 600; }
+  @media screen and (max-width: 768px) {
+    .contact .jobs .jobs_content .border-right {
+      border-right: none !important; } }
+  @media screen and (max-width: 1200px) {
+    .contact .partners .partners_content {
+      width: 80%; } }
+  @media screen and (max-width: 992px) {
+    .contact .partners .partners_content {
+      width: 90%; } }
+  @media screen and (max-width: 768px) {
+    .contact .partners .partners_content {
+      width: 70%; }
+      .contact .partners .partners_content .partners_img {
+        flex-wrap: wrap; }
+        .contact .partners .partners_content .partners_img .partners_item {
+          width: 50%;
+          text-align: center;
+          margin-bottom: 5px; } }
 
 footer {
   color: #686f7a;
@@ -301,6 +340,9 @@ footer {
           padding: 0; }
           footer .footer_top ul .nav-item .nav-link.bold {
             font-weight: 700; }
+      @media screen and (max-width: 576px) {
+        footer .footer_top ul .nav-item {
+          flex-basis: 20%; } }
     footer .footer_top .btn-group {
       display: block; }
       footer .footer_top .btn-group .button-drop {
@@ -404,6 +446,10 @@ footer {
         .cover .cover_content form .input-group .input-group-text:hover {
           background-color: #ec5252;
           color: #fff; }
+  @media screen and (max-width: 576px) {
+    .cover .cover_content {
+      max-width: 400px;
+      left: 10%; } }
 
 .card {
   height: 275px;

@@ -28,6 +28,36 @@
                     }
                 }
             }
+            @include breakPoint("medium") {
+                .border-right {
+                    border-right: none !important ;
+                }
+            }
+        }
+    }
+    .partners {
+        @include breakPoint("extra-large") {
+            .partners_content {
+                width: 80%;
+            }
+        }
+        @include breakPoint("large") {
+            .partners_content {
+                width: 90%;
+            }
+        }
+        @include breakPoint("medium") {
+            .partners_content {
+                width: 70%;
+                .partners_img {
+                    flex-wrap: wrap;
+                    .partners_item {
+                        width: 50%;
+                        text-align: center;
+                        margin-bottom: $mg-0;
+                    }
+                }
+            }
         }
     }
 }

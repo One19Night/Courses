@@ -15,6 +15,11 @@ footer {
                     }
                 }
             }
+            @include breakPoint("small") {
+                .nav-item{
+                    flex-basis: 20%;
+                }
+            }
         }
         .btn-group {
             display: block;

@@ -133,14 +133,14 @@
     <section class="courses">
         <div class="courses_content">
             <div class="row">
-                <div class="col-4 courses_left">
+                <div class="col-12 col-md-3 col-xl-4 courses_left">
                     <div>
                         <h2>The world's largest selection of courses</h2>
                         <p>Choose from over 80.000 video courses with new additions
                             published every month</p>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-12 col-md-9 col-xl-8">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="dev-tab" data-toggle="tab" href="#dev"
@@ -1158,7 +1158,7 @@
                 <div class="card">
                     <img src="./img/kh8.jpg" class="card-img-top" alt="View_8">
                     <div class="card-body">
-                        <h5 class="card-title">The Ultimate MYSQL Bootcamp: Go from SQL Beginner to
+                        <h5 class="card-title">The Ultimate MYSQL Bootcamp : Go from SQL Beginner to
                             Expert</h5>
                         <p class="card-text">Colt Steele lan Schoonover</p>
                         <div class="card_star">
@@ -1335,49 +1335,49 @@
         <div class="categories_content">
             <h2>Top Categories</h2>
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="categories_item">
                         <i class="fa fa-code"></i>
                         <span>Development</span>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="categories_item">
                         <i class="fa fa-chart-bar"></i>
                         <span>Business</span>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="categories_item">
                         <i class="fa fa-laptop"></i>
                         <span>IT and Software</span>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="categories_item">
                         <i class="fa fa-pencil-alt"></i>
                         <span>Design</span>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="categories_item">
                         <i class="fa fa-bullseye"></i>
                         <span>Marketing</span>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="categories_item">
                         <i class="fa fa-book"></i>
                         <span>Personal Development</span>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="categories_item">
                         <i class="fa fa-camera-retro"></i>
                         <span>Photography</span>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="categories_item">
                         <i class="fa fa-music"></i>
                         <span>Music</span>
@@ -1570,7 +1570,7 @@
         <div class="jobs container-fluid">
             <div class="jobs_content">
                 <div class="row">
-                    <div class="col-6 border-right">
+                    <div class="col-12 col-md-6 border-right">
                         <div class="jobs_item">
                             <h2>Become an Instructor</h2>
                             <p>Top instructors from around the world teach millions of
@@ -1579,7 +1579,7 @@
                             <button class="button-red">Start teaching today</button>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <div class="jobs_item">
                             <h2>Udemy for Business</h2>
                             <p>Get unlimited access to 4,000+ of Udemy's top courses
@@ -1595,7 +1595,7 @@
     <footer>
         <div class="footer_top">
             <div class="row">
-                <div class="col-9">
+                <div class="col-12 col-md-9">
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link bold" href="#">Udemy for Business</a>
@@ -1628,8 +1628,8 @@
                             <a class="nav-link" href="#">Featured courses</a>
                         </li>
                 </div>
-                <div class="col-3">
-                    <div class="btn-group dropup text-right">
+                <div class="col-12 col-md-3">
+                    <div class="btn-group dropup text-md-right">
                         <button type="button" class="btn button-drop dropdown-toggle" data-toggle="dropdown">
                             <i class="fa fa-globe"></i>
                             English
@@ -1650,12 +1650,12 @@
         <hr>
         <div class="footer_bottom">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <img src="./img/logo-coral.svg" alt="logo_footer">
                     <span>&copy; Copyright 2020 Udemy, Inc.</span>
                 </div>
-                <div class="col-6">
-                    <ul class="nav justify-content-end">
+                <div class="col-12 col-md-6">
+                    <ul class="nav justify-content-md-end">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Terms</a>
                         </li>
@@ -1690,13 +1690,20 @@
             dots: false,
             responsive: {
                 0: {
-                    items: 1
+                    items: 2,
+                    margin: 5
                 },
-                600: {
-                    items: 3
+                600:{
+                    items: 3,
+                    margin: 5
                 },
-                1000: {
-                    items: 4
+                1000:{
+                    items: 4,
+                    margin: 5
+                },
+                1450:{
+                    items: 4,
+                    margin: 15
                 }
             }
         })
@@ -1707,13 +1714,24 @@
             dots: false,
             responsive: {
                 0: {
-                    items: 1
+                    items: 2,
+                    margin: 5
                 },
                 600: {
-                    items: 3
+                    items: 3,
+                    margin: 5
+                },
+                800: {
+                    items: 4,
+                    margin: 15
                 },
                 1000: {
-                    items: 6
+                    items: 5,
+                    margin: 15
+                },
+                1450:{
+                    items: 6,
+                    margin: 15
                 }
             }
         })
@@ -1726,10 +1744,10 @@
                 0: {
                     items: 1
                 },
-                600: {
+                860: {
                     items: 2
                 },
-                1000: {
+                1200: {
                     items: 3
                 }
             }

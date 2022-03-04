@@ -31,4 +31,23 @@
             }
         }
     }
+    @include breakPoint("extra-large-big") {
+        .courses_content{
+            .card {
+                .card-body {    
+                    .card-title {
+                        @include styleText($color-black-0, $fs-1, $fw-1);
+                        margin-bottom: $mg-0 + 5;
+                    }
+                }
+            }
+        }
+    }
+    @include breakPoint("medium") {
+        .courses_content{
+            .courses_left{
+                padding: $pd-3;
+            }
+        }
+    }
 }
