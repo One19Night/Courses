@@ -86,7 +86,8 @@ body {
     .mynavbar .navbar_right .navbar-nav .nav-item {
       padding: 7px 5px;
       border-radius: 3px;
-      position: relative; }
+      position: relative;
+      white-space: nowrap; }
       .mynavbar .navbar_right .navbar-nav .nav-item .nav-link {
         color: #505763;
         font-size: 13px;
@@ -105,7 +106,9 @@ body {
         text-align: center;
         position: absolute;
         top: 60px;
-        right: 0; }
+        right: 0;
+        z-index: 10;
+        white-space: normal; }
         .mynavbar .navbar_right .navbar-nav .nav-item .overlay::before {
           content: "";
           width: 15px;
@@ -122,11 +125,36 @@ body {
       width: 50px;
       height: 50px;
       line-height: 20px;
-      border-radius: 50%; }
+      border-radius: 50%;
+      text-align: center; }
       .mynavbar .navbar_right .navbar-nav .nav_cart .nav-link {
         font-size: 20px; }
-    .mynavbar .navbar_right .navbar-nav .nav_buttons:hover {
-      background-color: transparent; }
+    .mynavbar .navbar_right .navbar-nav .nav_buttons {
+      display: flex; }
+      .mynavbar .navbar_right .navbar-nav .nav_buttons:hover {
+        background-color: transparent; }
+      .mynavbar .navbar_right .navbar-nav .nav_buttons button {
+        white-space: nowrap; }
+      .mynavbar .navbar_right .navbar-nav .nav_buttons .button-white {
+        margin-right: 5px; }
+  @media screen and (max-width: 768px) {
+    .mynavbar .navbar_left .navbar_categories, .mynavbar .navbar_left .navbar_form_search {
+      display: none; }
+    .mynavbar .navbar_right {
+      margin-left: auto; }
+      .mynavbar .navbar_right .navbar-nav .nav_buttons {
+        display: none; } }
+  @media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .mynavbar .mynavbar--set {
+      margin-left: 0; }
+      .mynavbar .mynavbar--set .navbar_right .navbar-nav .nav-item {
+        white-space: nowrap; }
+        .mynavbar .mynavbar--set .navbar_right .navbar-nav .nav-item .nav-link {
+          font-size: 12px; } }
+  @media screen and (max-width: 1200px) {
+    .mynavbar .bussiness,
+    .mynavbar .intruction {
+      display: none; } }
 
 .intro {
   background: linear-gradient(-45deg, #ec5252, #6e1a52);

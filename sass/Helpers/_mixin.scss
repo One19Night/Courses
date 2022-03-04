@@ -56,3 +56,18 @@
         }
     }
 }
+
+// BREAK POINT
+
+@mixin breakPoint($screen) {
+    @if map-has-key($map:$breakpoints , $key:$screen ){
+        $value: map-get($map:$breakpoints , $key:$screen );
+        @media screen and (max-width:$value){
+            @content;
+        }
+
+    }
+    @else{
+        @warn "`{$screen}` isn't value in breakpoints";
+    }
+}

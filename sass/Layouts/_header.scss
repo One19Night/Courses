@@ -33,6 +33,7 @@
                 padding: $pd-2 + 2 $pd-2;
                 border-radius: $border-radius + 1;
                 position: relative;
+                white-space: nowrap;
                 .nav-link {
                     @include styleText($color-black-light, $fs-1, $fw-0);
                 }
@@ -53,6 +54,8 @@
                     position: absolute;
                     top: 60px;
                     right: 0;
+                    z-index: 10;
+                    white-space: normal;
                     &::before {
                         content: "";
                         width: 15px;
@@ -73,15 +76,59 @@
                 height: 50px;
                 line-height: 20px;
                 border-radius: $border-radius-circle;
+                text-align: center;
                 .nav-link {
                     font-size: $fs-2 / 2;
                 }
             }
             .nav_buttons {
+                display: flex;
                 &:hover {
                     background-color: transparent;
                 }
+                button {
+                    white-space: nowrap;
+                }
+                .button-white {
+                    margin-right: $mg-0;
+                }
             }
+        }
+    }
+    @include breakPoint("medium"){
+.navbar_left{
+    .navbar_categories,.navbar_form_search{
+        display: none;
+    }
+}
+.navbar_right{
+    margin-left: auto;
+    .navbar-nav{
+        .nav_buttons{
+            display: none;
+        }
+    }
+}
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1400px) {
+       .mynavbar--set{
+           margin-left: 0;
+           .navbar_right {
+               .navbar-nav {
+                   .nav-item {
+                       white-space: nowrap;
+                       .nav-link {
+                           font-size: $fs-1 - 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include breakPoint("extra-large") {
+        .bussiness,
+        .intruction {
+            display: none;
         }
     }
 }
