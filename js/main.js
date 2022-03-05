@@ -1,3 +1,4 @@
+// Trunder Text
 window.addEventListener("load",function(){
     truncateCard()
 })
@@ -17,3 +18,15 @@ function truncateString(str,num){
         return str
     }
 }
+// SIDEBAR
+var toggleBtn = document.querySelector('.sidebar_button')
+var sidebarMini = document.querySelector('.sidebar')
+var switchBtn = document.querySelector('#checkbox')
+
+switchBtn.addEventListener('click',function(){
+    document.querySelector('body').classList.toggle('darkmode')
+})
+
+toggleBtn.addEventListener('click',function(){
+    sidebarMini.classList.toggle('opened')
+})

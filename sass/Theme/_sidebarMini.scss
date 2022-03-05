@@ -1,0 +1,19 @@
+.darkmode{
+    .sidebar{
+        background-color: $color-dark-0;
+        color: $color-white-0;
+        .sidebar_button {
+            background-color: $color-dark-0;
+            border-color:$color-dark-0 ;
+            color: $color-white-0;
+        }
+        .sidebar_content {
+            .switch{
+                .slider{
+                    background-color: $color-dark-0;
+                    box-shadow:0 0 2px 3px $color-dark-2;
+                }
+            }
+        }
+    }
+}

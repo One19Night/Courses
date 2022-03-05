@@ -21,13 +21,17 @@
     border: 1px solid $border-hover;
 }
 // FORM
-@mixin styleForm($bg-color, $bg-color-focus, $border-color) {
+@mixin styleForm($bg-color, $color, $bg-color-focus, $border-color) {
     .input-group {
         background-color: $bg-color;
         .form-control {
             background-color: transparent;
             border-color: transparent;
             box-shadow: none;
+            color: $color;
+            &::placeholder{
+                color: $color;
+            }
             &:focus {
                 background-color: $bg-color-focus;
                 border-color: $border-color;

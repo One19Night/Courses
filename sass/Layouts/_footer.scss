@@ -45,6 +45,12 @@ footer {
             width: 110px;
             margin-right: $mg-2 / 2;
         }
+        .logo_black {
+            display: inline-block;
+        }
+        .logo_white {
+            display: none;
+        }
         .nav-item {
             .nav-link {
                 @include styleText($color-blue-0, $fs-1, $fw-0);

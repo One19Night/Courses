@@ -23,17 +23,17 @@
 <body>
     <!-- HEADER -->
     <header>
-        <nav class="mynavbar navbar navbar-expand-md navbar-light bg-light">
+        <nav class="mynavbar navbar navbar-expand-md navbar-light">
             </div class="d-md-none col-3">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
             </div>
             <div class="col-6 col-md-8 col-lg-9 col-xl-7 ">
                 <div class="navbar_left">
                     <a class="navbar-brand" href="#">
-                        <img src="./img/logo-coral.svg" alt="logoCourses"> </a>
+                        <img class="logo_black" src="./img/logo-coral.svg" alt="logoCoursesBlack">
+                        <img class="logo_white" src="./img/logo-coral-white.svg" alt="logoCoursesWhite"></a>
                     <div class="navbar_categories">
                         <i class="fa fa-th"></i>
                         <span>Categories</span>
@@ -208,8 +208,8 @@
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star-half"></i>
                                             </span>
-                                            <span>4.3</span>
-                                            <span>(11.297)</span>
+                                            <span class="card_rate">4.3</span>
+                                            <span class="card_total">(11.297)</span>
                                         </div>
                                         <div class="card_price">
                                             <span>$179.99</span>
@@ -231,8 +231,8 @@
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star-half"></i>
                                             </span>
-                                            <span>4.8</span>
-                                            <span>(6.284)</span>
+                                            <span class="card_rate">4.8</span>
+                                            <span class="card_total">(6.284)</span>
                                         </div>
                                         <div class="card_price">
                                             <span>$179.99</span>
@@ -253,8 +253,8 @@
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star-half"></i>
                                             </span>
-                                            <span>4.7</span>
-                                            <span>(5.284)</span>
+                                            <span class="card_rate">4.7</span>
+                                            <span class="card_total">(5.284)</span>
                                         </div>
                                         <div class="card_price">
                                             <span>$179.99</span>
@@ -275,8 +275,8 @@
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star-half"></i>
                                             </span>
-                                            <span>4.8</span>
-                                            <span>(10.284)</span>
+                                            <span class="card_rate">4.8</span>
+                                            <span class="card_total">(10.284)</span>
                                         </div>
                                         <div class="card_price">
                                             <span>$179.99</span>
@@ -298,11 +298,11 @@
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star-half"></i>
                                             </span>
-                                            <span>4.8</span>
-                                            <span>(1.284)</span>
+                                            <span class="card_rate">4.8</span>
+                                            <span class="card_total">(1.284)</span>
                                         </div>
                                         <div class="card_price">
-                                            <span>$17.99</span>
+                                            <span>$179.99</span>
                                             <span>$9.99</span>
                                         </div>
                                     </div>
@@ -1651,7 +1651,8 @@
         <div class="footer_bottom">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <img src="./img/logo-coral.svg" alt="logo_footer">
+                    <img class="logo_black" src="./img/logo-coral.svg" alt="logoCoursesBlack">
+                    <img class="logo_white" src="./img/logo-coral-white.svg" alt="logoCoursesWhite">
                     <span>&copy; Copyright 2020 Udemy, Inc.</span>
                 </div>
                 <div class="col-12 col-md-6">
@@ -1667,8 +1668,23 @@
             </div>
         </div>
     </footer>
-
-
+    <!-- SIDE BAR -->
+    <div class="sidebar">
+        <button class="sidebar_button">
+            <i class="fa fa-cog"></i>
+        </button>
+        <div class="sidebar_content">
+            <h2>Dark Mode</h2>
+            <div class="d-flex">
+                <span>Off</span>
+                <label class="switch" for="checkbox">
+                    <input type="checkbox" name="" id="checkbox">
+                    <div class="slider"></div>
+                </label>
+                <span>On</span>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -1693,15 +1709,15 @@
                     items: 2,
                     margin: 5
                 },
-                600:{
+                600: {
                     items: 3,
                     margin: 5
                 },
-                1000:{
+                1000: {
                     items: 4,
                     margin: 5
                 },
-                1450:{
+                1450: {
                     items: 4,
                     margin: 15
                 }
@@ -1729,7 +1745,7 @@
                     items: 5,
                     margin: 15
                 },
-                1450:{
+                1450: {
                     items: 6,
                     margin: 15
                 }

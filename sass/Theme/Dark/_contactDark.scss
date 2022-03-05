@@ -1,0 +1,17 @@
+.darkmode{
+    .contact{
+        .partners{
+            background-color: $color-dark-6;
+        }
+        .jobs{
+            background-color: $color-dark-6;
+            .jobs_content{
+                .jobs_item{
+                    h2{
+                        color: $color-dark-5;
+                    }
+                }
+            }
+        }
+    }
+}

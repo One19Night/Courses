@@ -10,6 +10,12 @@
             img {
                 width: 110px;
             }
+            .logo_black {
+                display: inline-block;
+            }
+            .logo_white {
+                display: none;
+            }
         }
         .navbar_categories {
             flex-grow: 1;
@@ -22,7 +28,7 @@
         }
         .navbar_form_search {
             flex-grow: 8;
-            @include styleForm($color-white-cream, $color-white-0, $color-gray-4);
+            @include styleForm($color-white-cream,$color-black-light, $color-white-0, $color-gray-4);
         }
     }
     .navbar_right {

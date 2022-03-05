@@ -16,7 +16,7 @@
             @include styleText($color-white-0, $fs-3, $fw-0);
         }
         form {
-            @include styleForm($color-white-0, $color-white-0, $color-white-0);
+            @include styleForm($color-white-0, $color-black-light, $color-white-0, $color-white-0);
         }
     }
     @include breakPoint("small") {
